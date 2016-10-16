@@ -1,1 +1,42 @@
-/* Empty. Add your own CSS if you like */
+#tomato {
+  font-family: 'Quicksand';
+  position: relative;
+  right: .0565em;
+  font-size: 8em;
+  max-width: 65vh;
+  max-height: 60.666vh;
+  width: 1.4em;
+  height: 1.5em;
+  margin: 1.2em auto .35em;
+  color: white;
+  background: #f00;
+  background-image: radial-gradient( circle at right 35%, #f60, #f30);
+  border-radius: 50% 50% 55% 55%;
+  text-align: center;
+  box-shadow:
+  /* the heirloom tomato */
+  0 -.08em #0b9910,       /* center leaf */
+  -.3em .0 #e30,           /* left segment */
+  -.275em -.06em #097700, /* left leaf */
+  .3em 0 #ff4000,         /* right segment */
+  .275em -.06em #0caa20,  /* right leaf */
+  -.5em 0 #d20,           /* mid left segment*/
+  -.45em -.05em #076600,  /* mid left leaf */
+  .5em 0 #ff5000,         /* mid right segment*/
+  .45em -.05em #0bcc10,   /* mid right leaf */
+  -.6em 0 #c00,           /* far left segment*/
+  -.55em -.04em #076600,  /* far left leaf */
+  .6em 0 #f50,            /* far right segment*/
+  .55em -.04em #0bcc10;   /* far right leaf */
+}
+
+#tomato:before {
+  z-index: -1;
+  position: absolute;
+  top: -.225em;
+  left: 50%;
+  transform: rotate(20deg) skewX(-4deg) skewY(-45deg);
+  height: .2em;
+  width: .08em;
+  background: #0b9910;
+}
